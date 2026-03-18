@@ -13,7 +13,6 @@ root: /yasu123/   # GitHub Pages のサブディレクトリ
 # ディレクトリ
 source_dir: source
 public_dir: public
-theme: your-theme-name   # 使用テーマ
 
 # プラグイン
 plugins:
