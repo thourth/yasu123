@@ -194,9 +194,7 @@
       <div class="menus_item"><a class="site-page" href="/Presentations/"><i class="fas fa-comment"></i><span> Presentations</span></a></div>
       <!>
       <div class="menus_item"><a class="site-page" href="/Affiliations/"><i class="fa-fw fas fa-user"></i><span> Affiliations</span></a></div>
-     </div>
-      <div class="menus_item"><a class="site-page" href="/publication/"><i class="fas fa-book-open"></i><span> Publications</span></a></div>
-    </div>
+     </div></div>
     </div>
 
     <!上のヘッダーの部分>
@@ -255,35 +253,7 @@
 
 
 
-           <script src="/js/utils.js"></script>
-      <script src="/js/main.js"></script>
-      <script src="/js/tw_cn.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script>
-      <script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script>
-      <div class="js-pjax">
-        
-
-        
-        <script>(() => {
-  async function loadWaline () {
-    try {
-      const eleGroup = document.querySelectorAll('#recent-posts .waline-comment-count')
-      const keyArray = Array.from(eleGroup).map(i => i.getAttribute('data-path'))
-
-      const res = await fetch(`https://waline-moranweb-comments.vercel.app/api/comment?type=count&url=${keyArray}`, { method: 'GET' })
-      const result = await res.json()
-      
-      result.data.forEach((count, index) => {
-        eleGroup[index].textContent = count
-      })
-    } catch (err) {
-      console.error(err)
-    }
-  }
-
-  window.pjax ? loadWaline() : window.addEventListener('load', loadWaline)
-})()</script>
+          
         
         
         <div class="aside-content" id="aside-content">
@@ -401,7 +371,33 @@
      
     
     
-     
+      <script src="/js/utils.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/tw_cn.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script>
+      <script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script>
+      <div class="js-pjax">
+        <script>(() => {
+  async function loadWaline () {
+    try {
+      const eleGroup = document.querySelectorAll('#recent-posts .waline-comment-count')
+      const keyArray = Array.from(eleGroup).map(i => i.getAttribute('data-path'))
+
+      const res = await fetch(`https://waline-moranweb-comments.vercel.app/api/comment?type=count&url=${keyArray}`, { method: 'GET' })
+      const result = await res.json()
+      
+      result.data.forEach((count, index) => {
+        eleGroup[index].textContent = count
+      })
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  window.pjax ? loadWaline() : window.addEventListener('load', loadWaline)
+})()</script>    
+</div>
       
       
       
