@@ -195,6 +195,23 @@ template {
 .article-sort-item-title,
 #recent-posts .recent-post-item >.recent-post-info > .article-title,
 #recent-posts .recent-post-item >.recent-post-info > .content,
+#recent-posts .recent-post-item >.recent-post-info > .content2,
+#recent-posts .recent-post-item >.recent-post-info > .content3,
+#recent-posts .recent-post-item >.recent-post-info > .content4,
+#recent-posts .recent-post-item >.recent-post-info > .content5,
+#recent-posts .recent-post-item >.recent-post-info > .content6,
+#recent-posts .recent-post-item >.recent-post-info > .content7,
+#recent-posts .recent-post-item >.recent-post-info > .content8,
+#recent-posts .recent-post-item >.recent-post-info > .content9,
+#recent-posts .recent-post-item >.recent-post-info > .content10,
+#recent-posts .recent-post-item >.recent-post-info > .content11,
+#recent-posts .recent-post-item >.recent-post-info > .content12,
+#recent-posts .recent-post-item >.recent-post-info > .content13,
+#recent-posts .recent-post-item >.recent-post-info > .content14,
+#recent-posts .recent-post-item >.recent-post-info > .content15,
+
+
+
 #aside-content .aside-list > .aside-list-item .content > .name,
 #aside-content .aside-list > .aside-list-item .content > .title,
 #aside-content .aside-list > .aside-list-item .content > .comment,
@@ -219,24 +236,44 @@ template {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
+
+/* カードやウィジェットの余計な枠を削除 */
 .cardHover,
 .layout > div:first-child:not(.nc),
 #aside-content .card-widget {
   border: none;
   padding: 0;
+  background: #806161; /* 控えめで落ち着いた背景 */
+  box-shadow: 0 1px 3px rgba(0,0,0.05,0.08); /* 軽い浮き感 */
+  border-radius: 6px;
 }
-
-#recent-posts .recent-post-item,
+/* 投稿リストの境界線を控えめに */
+#recent-posts .recent-post-item{
+  max-width: 800px;  /* 好きな最大幅 */
+  margin: 0 auto;    /* 左右中央寄せ */
+  padding: 0 16px;
+}
 #article-container .shuoshuo-item {
-  border-bottom: 1px solid #e51111;
-  padding: 12px 0;
+  border-bottom: 1px solid #cccccc; /* 赤から落ち着いたグレーに */
+  padding: 16px 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* 読みやすいサンセリフ */
+  color: #333; /* 黒より柔らかい文字色 */
+}
+/* ページネーションも落ち着いた印象に */
+.layout .pagination > *:not(.space) {
+  border: 1px solid #999999;
+  padding: 6px 12px;
+  margin: 0 4px;
+  border-radius: 4px;
+  background: #f2f2f2;
+  color: #333;
+  transition: background 0.2s, color 0.2s;
+}
+.layout .pagination > *:not(.space):hover {
+  background: #e6e6e6;
+  color: #000;
 }
 
-.layout .pagination > *:not(.space) {
-  border: 1px solid #8f3333;
-  padding: 4px 10px;
-  margin: 0 4px;
-}
 .imgHover,
 .article-sort-item-img :first-child,
 #recent-posts .recent-post-item .post_cover .post-bg,
