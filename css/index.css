@@ -221,16 +221,21 @@ template {
 }
 .cardHover,
 .layout > div:first-child:not(.nc),
-#recent-posts .recent-post-item,
-#article-container .shuoshuo-item,
 #aside-content .card-widget {
   border: none;
   padding: 0;
 }
+
+#recent-posts .recent-post-item,
+#article-container .shuoshuo-item {
+  border-bottom: 1px solid #e51111;
+  padding: 12px 0;
+}
+
 .layout .pagination > *:not(.space) {
-  background: rgba(157, 126, 126, 0.03);
-  bordor-bottom: 1px solid #b76b6b;
-  padding: 16px 0px;
+  border: 1px solid #8f3333;
+  padding: 4px 10px;
+  margin: 0 4px;
 }
 .imgHover,
 .article-sort-item-img :first-child,
