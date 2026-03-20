@@ -305,28 +305,7 @@
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script>
       <script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script>
-      <div class="js-pjax">
-        <script>(() => {
-  async function loadWaline () {
-    try {
-      const eleGroup = document.querySelectorAll('#recent-posts .waline-comment-count')
-      const keyArray = Array.from(eleGroup).map(i => i.getAttribute('data-path'))
 
-      const res = await fetch(`https://waline-moranweb-comments.vercel.app/api/comment?type=count&url=${keyArray}`, { method: 'GET' })
-      const result = await res.json()
-      
-      result.data.forEach((count, index) => {
-        eleGroup[index].textContent = count
-      })
-    } catch (err) {
-      console.error(err)
-    }
-  }
-
-  window.pjax ? loadWaline() : window.addEventListener('load', loadWaline)
-})()</script>    
-</div>
-      
       
       
   <script>window.newestComments = {
