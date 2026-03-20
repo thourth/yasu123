@@ -345,6 +345,11 @@ template {
 }
 #page-header:not(.full_page),
 #nav.show {
+  position: fixed;    /* 画面上部に固定 */
+  top: 0;             /* 上端に配置 */
+  left: 0;            /* 左端に合わせる */
+  width: 100%;        /* 横幅いっぱいに広げる */
+  z-index: 9999;
   -webkit-animation: header-effect 1s;
   -moz-animation: header-effect 1s;
   -o-animation: header-effect 1s;
