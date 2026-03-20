@@ -323,33 +323,13 @@ template {
   -ms-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.custom-hr,
-.search-dialog hr {
-  position: relative;
-  margin: 40px auto;
-  border: 2px dashed var(--hr-border);
-  width: calc(100% - 4px);
-}
-.custom-hr:hover:before,
-.search-dialog hr:hover:before {
-  left: calc(95% - 20px);
-}
-.custom-hr:before,
-.search-dialog hr:before {
-  position: absolute;
-  top: -10px;
-  left: 5%;
-  z-index: 1;
-  color: var(--hr-before-color);
-  content: '\f0c4';
-  font-size: 20px;
-  line-height: 1;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
+
+
+
+
+
+
+
 .verticalCenter,
 .pagination-related .info .info-1,
 .pagination-related .info .info-2 {
@@ -370,6 +350,12 @@ template {
   -ms-animation: bottom-top 1s;
   animation: bottom-top 1s;
 }
+
+
+
+
+
+
 #page-header:not(.full_page),
 #nav.show {
   -webkit-animation: header-effect 1s;
@@ -378,6 +364,14 @@ template {
   -ms-animation: header-effect 1s;
   animation: header-effect 1s;
 }
+
+
+
+
+
+
+
+
 #site-title,
 #site-subtitle {
   -webkit-animation: titleScale 1s;
