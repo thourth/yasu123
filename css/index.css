@@ -241,11 +241,11 @@ template {
 .cardHover,
 .layout > div:first-child:not(.nc),
 #aside-content .card-widget {
-  border-bottom: 6px;
+  border-bottom: 6px solid #0d0d0d;
   padding: 0;
-  background: #806161; /* 控えめで落ち着いた背景 */
+  background: #d7d2d2; /* 控えめで落ち着いた背景 */
   box-shadow: 0 1px 3px rgba(0,0,0.05,0.08); /* 軽い浮き感 */
-  border-radius: 6px;
+  border-radius: 2px;
 }
 /* 投稿リストの境界線を控えめに */
 #recent-posts .recent-post-item{
