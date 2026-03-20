@@ -2429,7 +2429,7 @@ figure.highlight pre .javascript .function {
   width: 100% !important;
 }
 .apple #page-header.full_page {
-  background-attachment: fixed !important;
+  background-attachment: scroll !important;
 }
 .apple .recent-post-item,
 .apple .avatar-img,
@@ -3767,6 +3767,13 @@ figure.highlight pre .javascript .function {
   transition: filter 375ms ease-in 0.2s, transform 0.3s;
   object-fit: cover;
 }
+.avatar-img img:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
 .site-data {
   display: table;
   width: 100%;
@@ -4229,7 +4236,7 @@ figure.highlight pre .javascript .function {
 }
 #page-header.full_page {
   height: 100vh;
-  background-attachment: fixed;
+  background-attachment: scroll !important;
 }
 #page-header.full_page #site-info {
   position: absolute;
