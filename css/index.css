@@ -7922,7 +7922,7 @@ blockquote.pullquote.right {
 .label {
   width: 130px;       /* ラベル幅を固定 */
   font-weight: bold;  /* 太字 */
-  margin-right: 12px;
+  margin-right: 6px;
 }
 
 .value {
