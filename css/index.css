@@ -4248,7 +4248,7 @@ figure.highlight pre .javascript .function {
   content: '';
 }
 #page-header.full_page {
-  height: 50vh;
+  height: 10vh;
   background-attachment: scroll !important;
 }
 #page-header.full_page #site-info {
