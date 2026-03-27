@@ -2460,6 +2460,11 @@ figure.highlight pre .javascript .function {
 .layout.hide-aside > div {
   width: 100% !important;
 }
+@media screen and (max-width: 768px) {
+  #page-header.full_page {
+    height: 50vh; /* スマホ画面では50%の高さにする */
+  }
+}
 .apple #page-header.full_page {
   background-attachment: scroll !important;
 }
