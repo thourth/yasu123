@@ -4237,7 +4237,7 @@ figure.highlight pre .javascript .function {
   width: 100%;
   background-color: #a9d5cd;
   background-position: center center;
-  background-size: 100% 50%;
+  background-size: cover; /* 変更①: 50% 50% ではなく cover に戻す */
   background-repeat: no-repeat;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -4245,6 +4245,7 @@ figure.highlight pre .javascript .function {
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 #page-header:not(.not-top-img):before {
   position: absolute;
   width: 100%;
@@ -4252,16 +4253,20 @@ figure.highlight pre .javascript .function {
   background-color: var(--mark-bg);
   content: '';
 }
+
 #page-header.full_page {
-  height: 20vh important;
+  height: 50vh !important; /* 変更②: 20vh important を 50vh !important に修正 (! が抜けていました) */
   background-attachment: fixed !important;
 }
+
 #page-header.full_page #site-info {
   position: absolute;
-  top: 43%;
+  top: 50%; /* 変更③: 43% を 50% に変更 */
+  transform: translateY(-50%); /* 追加④: 文字を縦の「ど真ん中」に揃える設定 */
   padding: 0 10px;
   width: 100%;
 }
+
 #page-header #site-title,
 #page-header #site-subtitle,
 #page-header #scroll-down .scroll-down-effects {
@@ -4269,6 +4274,7 @@ figure.highlight pre .javascript .function {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
   line-height: 1.5;
 }
+
 #page-header #site-title {
   margin: 0;
   color: var(--white);
