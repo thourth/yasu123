@@ -7964,7 +7964,7 @@ blockquote.pullquote.right {
 }
 /* メインコンテンツを上に引き上げる */
 #content-inner {
-  margin-top: -60vh !important;
+  margin-top: -50vh !important;
   position: relative;
   z-index: 10;
   background-color: var(--global-bg); /* 引き上げた時にヘッダーの背景が透けないようにする */
