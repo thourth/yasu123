@@ -4263,7 +4263,7 @@ figure.highlight pre .javascript .function {
 
 #page-header.full_page #site-info {
   position: absolute;
-  top: 30%; /* 変更③: 43% を 50% に変更 */
+  top: 60%; /* 変更③: 43% を 50% に変更 */
   transform: translateY(-50%); /* 追加④: 文字を縦の「ど真ん中」に揃える設定 */
   padding: 0 10px;
   width: 100%;
