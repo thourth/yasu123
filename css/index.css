@@ -7963,7 +7963,7 @@ blockquote.pullquote.right {
 }
 /* メインコンテンツを上に引き上げる */
 #content-inner {
-  margin-top: -50vh !important;
+  margin-top: -65vh !important;
   position: relative;
   z-index: 10; 
 }
