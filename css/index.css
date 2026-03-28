@@ -7960,3 +7960,9 @@ blockquote.pullquote.right {
 .aff-link:hover {
   color: #a9d5cd;   /* ホバー時に色を変える（任意） */
 }
+/* メインコンテンツを上に引き上げる */
+#content-inner {
+  margin-top: -50vh !important;
+  position: relative;
+  z-index: 10; /* ヘッダーの裏に隠れないようにする */
+}
